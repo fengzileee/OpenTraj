@@ -1,17 +1,16 @@
 from setuptools import setup
 
- setup(
-   name='opentraj',
-   version='1.0',
-   author='Javad Amirian',
-   author_email='amiryan.j@gmail.com',
-   packages=['opentraj'],
-   scripts=['bin/script1','bin/script2'],
-   url='https://github.com/crowdbotp/OpenTraj',
-   license='MIT',
-   description='Tools for analyzing trajectory datasets',
-   long_description=open('README.md').read(),
-   install_requires=[
+setup(
+    name='opentraj',
+    version='1.0',
+    author='Javad Amirian',
+    author_email='amiryan.j@gmail.com',
+    packages=['opentraj'],
+    url='https://github.com/crowdbotp/OpenTraj',
+    license='MIT',
+    description='Tools for analyzing trajectory datasets',
+    long_description=open('README.md').read(),
+    install_requires=[
         "numpy",
         "scipy",
         "sklearn",
@@ -19,8 +18,8 @@ from setuptools import setup
         "tqdm",
         "pykalman", 
         "PyYAML",       
-   ],
-   extras_require={
+        ],
+    extras_require={
         'test': [
             "pylint",
             "pytest",
@@ -29,5 +28,5 @@ from setuptools import setup
             "matplotlib",
             "seaborn",
         ]
-   }
+    }
 )
